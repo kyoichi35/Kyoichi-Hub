@@ -20,6 +20,20 @@ local Window = Library.CreateLib("Kyoichi Hub", "BloodTheme")
         loadstring(game:HttpGet(("https://raw.githubusercontent.com/HeiKe2022/wz-beta/main/combine.lua"),true))()
     end)
     
+    local Other = Window:NewTab("Shindo Life")
+    local OtherSection = Other:NewSection("Spy Hub")
+
+    OtherSection:NewButton("Click To Execute", "Click To Execute", function()
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/kyoichi35/DeadlySins/main/AutoSpinRace"),true))()
+    end)
+    
+    local Other = Window:NewTab("Blox Fruits")
+    local OtherSection = Other:NewSection("Spy Hub")
+
+    OtherSection:NewButton("Click To Execute", "Click To Execute", function()
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/kyoichi35/DeadlySins/main/AutoSpinRace"),true))()
+    end)
+    
     local Other = Window:NewTab("Info")
     local OtherSection = Other:NewSection("If you want to suggest game for the hub contact me")
     local OtherSection = Other:NewSection("Discord: kyoichi#1111")
