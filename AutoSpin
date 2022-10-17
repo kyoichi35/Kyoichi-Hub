@@ -6,11 +6,11 @@ local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("Main")
 
 
-MainSection:NewButton("Auto Spin Race", "Auto spins your race", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/kyoichi35/DeadlySins/main/AutoSpinRace?token=GHSAT0AAAAAAB2BQ55YITWO5OHZNLUTBZH4Y2NOEOA"))()
+MainSection:NewButton("Auto Spin Race", "Auto spins your race till legendary", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/kyoichi35/DeadlySins/main/AutoSpinRace"))()
 end)
 
-MainSection:NewToggle("Auto Spin Magic","Auto spins your magic", function(state)
+MainSection:NewToggle("Auto Spin Magic","Auto spins your magic till legendary", function(state)
     if state then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/kyoichi35/DeadlySins/main/AutoSpinMagic?token=GHSAT0AAAAAAB2BQ55YIGSU4G4GU6A32NHOY2NOKHQ"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/kyoichi35/DeadlySins/main/AutoSpinMagic"))()
 end)
