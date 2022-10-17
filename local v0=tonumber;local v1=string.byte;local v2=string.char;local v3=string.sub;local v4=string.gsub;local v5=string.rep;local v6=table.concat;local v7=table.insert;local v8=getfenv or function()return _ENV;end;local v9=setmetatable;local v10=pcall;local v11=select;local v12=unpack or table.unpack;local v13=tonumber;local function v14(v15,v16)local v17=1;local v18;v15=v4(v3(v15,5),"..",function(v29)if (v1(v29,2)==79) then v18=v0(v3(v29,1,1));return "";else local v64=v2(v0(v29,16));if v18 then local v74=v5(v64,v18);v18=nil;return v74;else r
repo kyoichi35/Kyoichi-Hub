@@ -16,3 +16,9 @@ local Window = Library.CreateLib("Kyoichi Hub", "BloodTheme")
     local Other = Window:NewTab("Info")
     local OtherSection = Other:NewSection("If you want to suggest game for the hub contact me")
     local OtherSection = Other:NewSection("Discord: kyoichi#1111")
+    
+    local Other = Window:NewTab("World Zero")
+    
+    OtherSection:NewButton("Execute the script", "Opens the gui of script", function()
+        loadstring(game:HttpGet(("loadstring(game:HttpGet("https://raw.githubusercontent.com/HeiKe2022/wz-beta/main/combine.lua"))()"),true))()
+    end)
