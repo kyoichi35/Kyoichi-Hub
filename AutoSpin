@@ -1,16 +1,14 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Kyoichi Hub", "DarkTheme")
+local Window = Library.CreateLib("Kyoichi Hub", "BloodTheme")
+    -- MAIN
+    
+    local Other = Window:NewTab("Main")
+    local OtherSection = Other:NewSection("Auto Spin")
 
---MAIN
-local Main = Window:NewTab("Main")
-local MainSection = Main:NewSection("Main")
+    OtherSection:NewButton("Auto Spin Race", "Auto Spins your Race till legendary", function()
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/kyoichi35/DeadlySins/main/AutoSpinRace"),true))()
+    end)
 
-
-MainSection:NewButton("Auto Spin Race", "Auto spins your race till legendary", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/kyoichi35/DeadlySins/main/AutoSpinRace"))()
-end)
-
-MainSection:NewToggle("Auto Spin Magic","Auto spins your magic till legendary", function(state)
-    if state then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/kyoichi35/DeadlySins/main/AutoSpinMagic"))()
-end)
+    OtherSection:NewButton("Auto Spin Magic", "Auto Spins your Magic till legendary", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/kyoichi35/DeadlySins/main/AutoSpinMagic"))() 
+    end)
