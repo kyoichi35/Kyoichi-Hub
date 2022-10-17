@@ -13,14 +13,6 @@ local Window = Library.CreateLib("Kyoichi Hub", "BloodTheme")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/kyoichi35/DeadlySins/main/AutoSpinMagic"))() 
     end)
     
-    local Other = Window:NewTab("World Zero")
-    local OtherSection = Other:NewSection("Click the button down below to open gui")
-
-    OtherSection:NewButton("Click to open gui", "Opens the gui of script", function()
-        loadstring(game:HttpGet(("https://raw.githubusercontent.com/HeiKe2022/wz-beta/main/combine.lua"),true))()
-    end)
-    
     local Other = Window:NewTab("Info")
     local OtherSection = Other:NewSection("If you want to suggest game for the hub contact me")
     local OtherSection = Other:NewSection("Discord: kyoichi#1111")
-    
