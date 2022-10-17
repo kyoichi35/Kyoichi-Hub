@@ -2,7 +2,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("Kyoichi Hub", "BloodTheme")
     -- MAIN
     
-    local Other = Window:NewTab("Main")
+    local Other = Window:NewTab("Deadly Sins")
     local OtherSection = Other:NewSection("Auto Spin")
 
     OtherSection:NewButton("Auto Spin Race", "Auto Spins your Race till legendary", function()
@@ -12,3 +12,7 @@ local Window = Library.CreateLib("Kyoichi Hub", "BloodTheme")
     OtherSection:NewButton("Auto Spin Magic", "Auto Spins your Magic till legendary", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/kyoichi35/DeadlySins/main/AutoSpinMagic"))() 
     end)
+
+    local Other = Window:NewTab("Info")
+    local OtherSection = Other:NewSection("If you want to suggest game for the hub contact me")
+    local OtherSection = Other:NewSection("Discord: kyoichi#1111")
