@@ -24,14 +24,14 @@ local Window = Library.CreateLib("Kyoichi Hub", "BloodTheme")
     local OtherSection = Other:NewSection("Spy Hub")
 
     OtherSection:NewButton("Click To Execute", "Click To Execute", function()
-        loadstring(game:HttpGet(("https://raw.githubusercontent.com/kyoichi35/DeadlySins/main/AutoSpinRace"),true))()
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/Corrupt2625/Revamps/main/SpyHub.lua"),true))()
     end)
     
     local Other = Window:NewTab("Blox Fruits")
     local OtherSection = Other:NewSection("Spy Hub")
 
     OtherSection:NewButton("Click To Execute", "Click To Execute", function()
-        loadstring(game:HttpGet(("https://raw.githubusercontent.com/kyoichi35/DeadlySins/main/AutoSpinRace"),true))()
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/Corrupt2625/pjv/main/Bloxfruit.lua"),true))()
     end)
     
     local Other = Window:NewTab("Info")
