@@ -1,10 +1,20 @@
-_G.AutoRace = true
-while _G.AutoRace do wait()
+local race = {"Royal Demon","Royal Vampire","Royal Fairy","Deity","Curse",}
+local Spinfs = game.Players.LocalPlayer.PlayerGui.MainUI.LocalScript.RaceSpin
 
-game:GetService("Players").LocalPlayer.PlayerGui.MainUI.LocalScript.RaceSpin:FireServer(game:GetService("Players").LocalPlayer.PlayerGui.MainUI.Contents.RaceMagic)
-wait(0.1)
+_G.Spins = true
+function Spins()
 
-if game.Players.LocalPlayer.Character.Data.Race.Value == "Curse" or "Deity" or "Royal Fairy" or "Royal Vampire" or "Royal Demon" then
-_G.AutoRace = false
-  end
+ Spinfs:FireServer(game:GetService("Players").LocalPlayer.PlayerGui.MainUI.Contents.RaceMagic)
+ wait(0.5)
+end
+
+
+while _G.Spins do
+ Spins()
+ for i,v in next, race do
+   if game.Players.LocalPlayer.Data.Race.Value == v then
+     _G.Spins = false
+     wait()
+   end
+ end
 end
