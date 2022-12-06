@@ -1,0 +1,5 @@
+-- Configurations
+getgenv().Stamina   =  10   -- The Percentage Of Stamina You Want To Reset At ( If you dont wanna reset make it tonumber('-inf') or -math.huge )
+getgenv().AutoFarm  =  false -- AutoFarm Toggle
+-- AutoFarm
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sunexn/FruitBattlegrounds/main/FruitBattlegrounds.lua",true))() -- Open Source
