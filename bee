@@ -2,8 +2,8 @@ local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/kometa-an
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/kometa-anon/kometa/main/ui/finity.lua"))()
 local bssapi = loadstring(game:HttpGet("https://raw.githubusercontent.com/kometa-anon/kometa/main/api/bssapi.lua"))()
 
-if not isfolder("kometa") then makefolder("kometa") end
-if isfile('kometa.txt') == false then (syn and syn.request or http_request)({ Url = "http://127.0.0.1:6463/rpc?v=1",Method = "POST",Headers = {["Content-Type"] = "application/json",["Origin"] = "https://discord.com"},Body = game:GetService("HttpService"):JSONEncode({cmd = "INVITE_BROWSER",args = {code = "2a5gVpcpzv"},nonce = game:GetService("HttpService"):GenerateGUID(false)}),writefile('kometa.txt', "discord")})end
+if not isfolder("kyoichibee") then makefolder("kyoichibee") end
+if isfile('kyoichibee.txt') == false then (syn and syn.request or http_request)({ Url = "http://127.0.0.1:6463/rpc?v=1",Method = "POST",Headers = {["Content-Type"] = "application/json",["Origin"] = "https://discord.com"},Body = game:GetService("HttpService"):JSONEncode({cmd = "INVITE_BROWSER",args = {code = "HxqKfC9zPx"},nonce = game:GetService("HttpService"):GenerateGUID(false)}),writefile('kyoichibee.txt', "discord")})end
 
 -- Script temporary variables
 
