@@ -1,0 +1,11 @@
+getgenv().farm = true;
+
+while farm == true do
+    game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ParageShotRemote"):FireServer(unpack(args)) local args = {
+        [1] = true,
+        [2] = Vector3.new(10476.140625, -3939.038818359375, -18890.357421875),
+        [3] = CFrame.new(Vector3.new(10476.140625, -3939.038818359375, -18890.357421875), Vector3.new(0.6365545988082886, -0.4069842994213104, -0.6551045179367065)),
+        [4] = 1
+    }
+    wait()
+end
