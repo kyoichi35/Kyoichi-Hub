@@ -1,3 +1,3 @@
 # About Kyoichi-Hub
 
-Go crazy
+Discontinued for now.
